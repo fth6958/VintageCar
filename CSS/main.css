@@ -1,0 +1,18 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.vc-navbar {
+    background-color: ivory;
+    color: Black;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.vc-navlist {
+
+    
+}
