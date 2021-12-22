@@ -12,22 +12,41 @@
 <body>
     <nav class="vc-navbar">
         <div>
-            <img src="images/VintageCar_logo.JPG">
+            <a href="#"> <img src="images/VintageCar_logo.JPG" alt="Vintage Car Logo" width="70" height=""> </a>            
         </div>
-        <ul class="vc-navlist">
-            <li>
-                <a><Strong>Cars</Strong></a>
+        <ul class="vc-navlist" id="vc-naviList">
+            <li class="vc-navlistitem">
+                <a href="#"><Strong>Cars</Strong></a>
             </li>
-            <li>
-                <a><Strong>Enquiries</Strong></a>
+            <li class="vc-navlistitem">
+                <a href="#"><Strong>Enquiries</Strong></a>
             </li>
-            <li>
-                <a><Strong>Contact</Strong></a>
+            <li class="vc-navlistitem">
+                <a href="#"><Strong>Contact</Strong></a>
             </li>
         </ul>
+        <div class="menu" id="vc-toggleButton">
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+        </div>
     </nav>
     
     <header><strong>Vintage Car for Hire</strong></header>
-
+    <div class="card" style="width:400px">
+        <img class="card-img-top" src="images/Car1.jpg" alt="Card image">
+        <div class="card-body">
+          <h4 class="card-title">Vintage Car 1</h4>
+          <p class="card-text">Good and mint conditions</p>
+          <a href="#" class="btn btn-primary">See Profile</a>
+        </div>
+      </div>
 </body>
+<script>
+    const toggleButton = document.getElementById('vc-toggleButton');
+    const vcnaviList = document.getElementById('vc-naviList');
+    toggleButton.addEventListener('click', () => {
+        naviList.classList.toggle('active');
+    })
+</script>
 </html>
